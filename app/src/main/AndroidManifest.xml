@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Animalcare">
-        <activity android:name=".activity_home"></activity>
+        <activity android:name=".StorageActivity"></activity>
+        <activity android:name=".Upload" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".Activity_management" />
+        <activity android:name=".activity_home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

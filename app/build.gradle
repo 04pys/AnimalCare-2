@@ -1,4 +1,4 @@
-plugins {
+    plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
 }
@@ -41,4 +41,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.0.0'
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'com.google.firebase:firebase-auth:20.0.3'
+    //firestore
+    implementation 'com.google.firebase:firebase-firestore'
+    //storage
+    implementation "com.google.firebase:firebase-storage-ktx:19.2.2"
 }
+    apply plugin: 'com.google.gms.google-services'
