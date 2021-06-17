@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     private String TAG = "MainActivity";
     private FirebaseAuth mAuth;
-    private Button btnSignOut;
+    private Button btnSignOut,Guestlogin;
     private int RC_SIGN_IN = 1;
 
 
@@ -42,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
         signInButton = findViewById(R.id.sign_in_button);
         mAuth = FirebaseAuth.getInstance();
         btnSignOut = findViewById(R.id.sign_out_button);
+        Guestlogin = findViewById(R.id.btn_guest);
+
+        Guestlogin.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, Activity_management.class);
+                intent.putExtra("userName", "Guest");
+                startActivity(intent);
+            }
+        });
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))

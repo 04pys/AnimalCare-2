@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Animalcare">
-        <activity android:name=".StorageActivity"></activity>
+        <activity android:name=".StorageActivity"/>
         <activity android:name=".Upload" />
         <activity android:name=".ImageActivity" />
         <activity android:name=".Activity_management" />

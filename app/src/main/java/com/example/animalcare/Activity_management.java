@@ -127,14 +127,7 @@ public class Activity_management extends AppCompatActivity {
                 }
             });
 
-            img_Btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent1 = new Intent(getApplicationContext(),ImageActivity.class);
-                    startActivity(intent1);
 
-                }
-            });
             if(textView2.getText()==null){
                 textView2.setVisibility(View.INVISIBLE);
                 diaryTextView.setVisibility(View.VISIBLE);
