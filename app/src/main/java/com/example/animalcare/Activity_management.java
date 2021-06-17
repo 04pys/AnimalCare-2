@@ -43,7 +43,7 @@ public class Activity_management extends AppCompatActivity {
         Intent intent=getIntent();
         String name=intent.getStringExtra("userName");
         final String userID=intent.getStringExtra("userID");
-        textView3.setText(name+"님의 달력 일기장");
+        textView3.setText(name+"님의 애완동물 관리");
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override

@@ -108,7 +108,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(getApplicationContext(),activity_home.class);
+                    Intent intent = new Intent(MainActivity.this,Activity_management.class);
+
                     startActivity(intent);
                     FirebaseUser user = mAuth.getCurrentUser();
                     updateUI(user);
