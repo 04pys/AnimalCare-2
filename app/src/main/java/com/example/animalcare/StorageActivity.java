@@ -67,7 +67,7 @@ public class StorageActivity extends AppCompatActivity {
             public void onFailure(@NonNull Exception exception) {
                 // Handle unsuccessful uploads
                 //업로드 실패시 :
-
+            // 본선 구현예정
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
